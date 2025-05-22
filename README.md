@@ -1,16 +1,38 @@
-
 # Artists Search
 
-Este projeto foi desenvolvido para a disciplina Programação Web III, utilizando React, Vite e JSX. A ideia principal é proporcionar uma experiência dinâmica e interativa de busca por artistas musicais, integrando a API do Spotify para trazer dados em tempo real.
+Este projeto foi desenvolvido para a disciplina **Programação Web III**, utilizando **React**, **Vite** e **JSX**. A ideia principal é proporcionar uma experiência dinâmica e interativa de busca por artistas musicais, integrando a API do Spotify para trazer dados em tempo real.
 
-Funcionalidades principais:
-- Busca instantânea de artistas conforme o usuário digita na barra de pesquisa.
-- Ao selecionar um artista, são exibidas informações detalhadas: foto, nome, número de seguidores, gênero musical (quando disponível) e as 7 músicas mais populares.
-- Alguns itens são clicáveis: o nome do artista e cada música abrem suas respectivas páginas no Spotify em uma nova aba, facilitando o acesso direto ao conteúdo original.
+---
 
-Este projeto reforça conceitos importantes de programação web moderna, como consumo de APIs externas, gerenciamento de estado no React, e criação de interfaces reativas e amigáveis.
+## Funcionalidades principais
 
-=======
+- Busca instantânea de artistas conforme o usuário digita na barra de pesquisa.  
+- Ao selecionar um artista, são exibidas informações detalhadas:  
+  - Foto  
+  - Nome  
+  - Número de seguidores  
+  - Gênero musical (quando disponível)  
+  - As 7 músicas mais populares  
+- Itens clicáveis:  
+  - Nome do artista abre a página do artista no Spotify em uma nova aba  
+  - Cada música abre a página da música no Spotify em uma nova aba  
+
+---
+
+## Tecnologias e conceitos aplicados
+
+- Consumo de APIs externas (API do Spotify)  
+- Gerenciamento de estado com React  
+- Criação de interfaces reativas e amigáveis  
+- Uso do bundler Vite para desenvolvimento rápido e eficiente  
+
+---
+
+Este projeto reforça conceitos importantes de programação web moderna e a integração entre front-end e APIs para criar aplicações interativas e funcionais.
+
+
+---
+
 
 # React + Vite
 
