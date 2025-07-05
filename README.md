@@ -117,6 +117,8 @@ git clone https://github.com/marianaararipe/artists-search.git
 
 ---
 
-Projeto com fins educacionais – todos os dados e imagens exibidos pertencem à API do Spotify.
-Este projeto faz parte da minha formação em Desenvolvimento de Sistemas, para a disciplina **Programação Web III**.  
-Veja outros trabalhos em: [meu GitHub](https://github.com/marianaararipe)
+- Projeto com fins educacionais – todos os dados e imagens exibidos pertencem à API do Spotify.
+- Este projeto faz parte da minha formação em Desenvolvimento de Sistemas, para a disciplina **Programação Web III**.
+- Veja outros trabalhos em: [meu GitHub](https://github.com/marianaararipe)
+
+
