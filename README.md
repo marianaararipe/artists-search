@@ -67,7 +67,7 @@ Este projeto reforçou habilidades práticas como:
 git clone https://github.com/marianaararipe/artists-search.git
 ````
 2. Instale as dependências com `npm install`  
-3. Insira suas credenciais da API do Spotify no `.env`  
+3. Insira suas credenciais da API do Spotify no `.AccessToken.jsx`  
 4. Inicie o servidor local com `npm run dev`
 
 ---
