@@ -67,8 +67,9 @@ Este projeto reforçou habilidades práticas como:
 git clone https://github.com/marianaararipe/artists-search.git
 ````
 2. Instale as dependências com `npm install`  
-3. Insira suas credenciais da API do Spotify no `.AccessToken.jsx`  
+3. Gere um token manualmente na [Spotify Developer Console](https://developer.spotify.com/documentation/web-api) e substitua em `.AccessToken.jsx` 
 4. Inicie o servidor local com `npm run dev`
+> O website abrirá em `http://localhost:5173`
 
 ---
 
