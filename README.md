@@ -64,7 +64,7 @@ Este projeto reforçou habilidades práticas como:
 
 1. Clone este repositório:
 ```bash
-git clone https://github.com/seu-usuario/artist-search.git
+git clone https://github.com/marianaararipe/artists-search.git
 ````
 2. Instale as dependências com `npm install`  
 3. Insira suas credenciais da API do Spotify no `.env`  
