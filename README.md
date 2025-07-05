@@ -1,49 +1,121 @@
-# Artists Search
+# 🎧 Artists Search – React + Spotify API
 
-Este projeto foi desenvolvido para a disciplina **Programação Web III**, utilizando **React**, **Vite** e **JSX**. A ideia principal é proporcionar uma experiência dinâmica e interativa de busca por artistas musicais, integrando a API do Spotify para trazer dados em tempo real.
+**Artists Search** é uma aplicação web desenvolvida com **React** e **Vite**, criada para a disciplina **Programação Web III**. O objetivo do projeto é proporcionar uma experiência interativa e dinâmica de busca por artistas musicais, integrando a API do Spotify para exibir informações em tempo real.
 
----
-
-## Funcionalidades principais
-
-- Busca instantânea de artistas conforme o usuário digita na barra de pesquisa.  
-- Ao selecionar um artista, são exibidas informações detalhadas:  
-  - Foto  
-  - Nome  
-  - Número de seguidores  
-  - Gênero musical (quando disponível)  
-  - As 7 músicas mais populares  
-- Itens clicáveis:  
-  - Nome do artista abre a página do artista no Spotify em uma nova aba  
-  - Cada música abre a página da música no Spotify em uma nova aba  
-
----
-
-## Tecnologias e conceitos aplicados
-
-- Consumo de APIs externas (API do Spotify)  
-- Gerenciamento de estado com React  
-- Criação de interfaces reativas e amigáveis  
-- Uso do bundler Vite para desenvolvimento rápido e eficiente  
-
----
-
-Este projeto reforça conceitos importantes de programação web moderna e a integração entre front-end e APIs para criar aplicações interativas e funcionais.
+![Interface do projeto](./src/assets/screenshot-resultado.png)
 
 
 ---
 
+## 🔍 Funcionalidades
 
-# React + Vite
+- **Busca instantânea** de artistas conforme o usuário digita
+- **Exibição de detalhes do artista**, como:
+  - Foto de perfil
+  - Nome
+  - Número de seguidores
+  - Gêneros musicais (quando disponíveis)
+  - As 7 músicas mais populares
+- **Itens clicáveis**:
+  - Nome do artista → abre o perfil no Spotify (nova aba)
+  - Nome das músicas → abre a música no Spotify (nova aba)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🧪 Tecnologias e Conceitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** – criação de interfaces declarativas e componentes reutilizáveis
+- **Vite** – bundler moderno com hot reload e build rápido
+- **Spotify Web API** – integração com API externa real
+- **JSX** – sintaxe para combinar HTML com lógica JavaScript
+- **Gerenciamento de estado** – controle da busca e resultados em tempo real
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> b6d6f67 (Deploy do projeto)
+## 🧠 Organização do Código
+
+A arquitetura do projeto foi pensada para separar responsabilidades:
+
+- `AccessToken.jsx`: autenticação com a API do Spotify
+- `SpotifyServices.jsx`: lida com todas as requisições (fetch)
+- Componentes reutilizáveis:
+  - `SearchBar`, `SearchResultsList`, `ArtistDetail`, `TopTracks`, `Track`
+
+> Abaixo, um trecho da função `fetchTopTracks()` usada para pegar as músicas mais populares:
+
+![Função fetchTopTracks](./src/assets/fetchTopTracks.png)
+
+
+---
+
+## 📚 Aprendizados
+
+Este projeto reforçou habilidades práticas como:
+
+- Integração com APIs reais usando tokens de autenticação
+- Manipulação de dados assíncronos com `fetch` e `async/await`
+- Criação de componentes reativos e reutilizáveis
+- Práticas de UI/UX para exibição de dados de forma clara
+- Deploy de aplicações modernas com Vite
+
+---
+
+## 🚀 Como executar localmente
+
+1. Clone este repositório:
+```bash
+git clone https://github.com/seu-usuario/artist-search.git
+````
+2. Instale as dependências com `npm install`  
+3. Insira suas credenciais da API do Spotify no `.env`  
+4. Inicie o servidor local com `npm run dev`
+
+---
+
+## 📁 Estrutura do Projeto
+
+```bash
+/
+├── public/                      # Arquivos públicos (favicon, HTML raiz)
+│
+├── src/
+│   ├── assets/                  # Imagens e ícones utilizados no projeto
+│
+│   ├── componentes/             # Componentes reutilizáveis da interface
+│   │   ├── ArtistDetail.jsx            # Exibe detalhes do artista (foto, nome, seguidores, gêneros)
+│   │   ├── ArtistDetail.module.css
+│   │   ├── SearchBar.jsx               # Barra de busca por artistas
+│   │   ├── SearchBar.module.css
+│   │   ├── SearchResult.jsx            # Card de cada artista nos resultados
+│   │   ├── SearchResult.module.css
+│   │   ├── SearchResultsList.jsx       # Lista com os artistas encontrados
+│   │   ├── SearchResultsList.module.css
+│   │   ├── TopTracks.jsx               # Lista com as 7 músicas mais populares
+│   │   ├── TopTracks.module.css
+│   │   ├── Track.jsx                   # Formata cada música (nome, duração, artistas)
+│   │   └── Track.module.css
+│
+│   ├── paginas/                 # Páginas principais
+│   │   ├── Layout.jsx                 # Organiza a estrutura da aplicação
+│   │   └── Layout.module.css
+│
+│   ├── AccessToken.jsx          # Faz a autenticação com a API do Spotify
+│   ├── SpotifyServices.jsx      # Funções para buscar dados da API (artistas, detalhes, músicas)
+│   ├── App.jsx                  # Componente raiz (controla estados principais)
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx                 # Ponto de entrada da aplicação
+│
+├── README.md                    # Documentação do projeto
+├── index.html                   # HTML base
+├── vite.config.js               # Configuração do Vite
+├── eslint.config.js             # Regras de lint
+├── package.json
+└── package-lock.json
+````
+
+---
+
+Projeto com fins educacionais – todos os dados e imagens exibidos pertencem à API do Spotify.
+Este projeto faz parte da minha formação em Desenvolvimento de Sistemas, para a disciplina **Programação Web III**.  
+Veja outros trabalhos em: [meu GitHub](https://github.com/marianaararipe)
