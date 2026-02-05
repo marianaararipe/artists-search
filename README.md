@@ -7,7 +7,7 @@
 
 ---
 
-## 🔍 Funcionalidades
+## Funcionalidades
 
 - **Busca instantânea** de artistas conforme o usuário digita
 - **Exibição de detalhes do artista**, como:
@@ -22,7 +22,7 @@
 
 ---
 
-## 🧪 Tecnologias e Conceitos
+## Tecnologias e Conceitos
 
 - **React** – criação de interfaces declarativas e componentes reutilizáveis
 - **Vite** – bundler moderno com hot reload e build rápido
@@ -32,7 +32,7 @@
 
 ---
 
-## 🧠 Organização do Código
+## Organização do Código
 
 A arquitetura do projeto foi pensada para separar responsabilidades:
 
@@ -48,7 +48,7 @@ A arquitetura do projeto foi pensada para separar responsabilidades:
 
 ---
 
-## 📚 Aprendizados
+## Aprendizados
 
 Este projeto reforçou habilidades práticas como:
 
@@ -60,7 +60,7 @@ Este projeto reforçou habilidades práticas como:
 
 ---
 
-## 🚀 Como executar localmente
+## Como executar localmente
 
 1. Clone este repositório:
 ```bash
@@ -73,7 +73,7 @@ git clone https://github.com/marianaararipe/artists-search.git
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```bash
 /
@@ -120,5 +120,6 @@ git clone https://github.com/marianaararipe/artists-search.git
 - Projeto com fins educacionais – todos os dados e imagens exibidos pertencem à API do Spotify.
 - Este projeto faz parte da minha formação em Desenvolvimento de Sistemas, para a disciplina **Programação Web III**.
 - Veja outros trabalhos em: [meu GitHub](https://github.com/marianaararipe)
+
 
 
